@@ -108,8 +108,9 @@ const Right = () => {
                 {item.year}
               </h2>
               <section className="flex-[75%]">
-                <h2 className="text-white text-[14px] lg:text-[16px] mb-3 font-[700]">
+                <h2 className="text-white text-[14px] lg:text-[16px] mb-3 font-[700] flex gap-2">
                   {item.title}
+                  <MdArrowOutward />
                 </h2>
                 <p className="text-[14px] lg:text-[14px]">{item.desc}</p>
                 <div className="flex gap-3 my-3">
