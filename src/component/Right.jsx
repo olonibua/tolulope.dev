@@ -1,7 +1,8 @@
 import React from "react";
 import covapay from "../img/covapay.png";
-import servicecrud from "../img/servicecrud.png";
 import crestfood from "../img/crestfood.png";
+import servicecrud from "../img/servicecrud.png";
+import adimstack from "../img/adimstack.jpg";
 import jextoban from "../img/jextoban.png";
 import portfolio from "../img/portfolio.png";
 import rotate from "../img/rotate.gif";
@@ -26,6 +27,13 @@ const Right = () => {
   ];
 
   const projects = [
+    {
+  img: adimstack,
+  title: "Gym Management Webapp",
+  link: "https://adimstack.vercel.app/",
+  desc: "A comprehensive gym management solution built with Next.js and Appwrite. This webapp empowers gym administrators to efficiently manage members. Key features include member self-service options for subscription management, new member registration, and integrated payment processing. The intuitive interface, powered by Tailwind CSS and shadcn components, ensures a seamless experience for both admins and members.",
+  tag: ["Next.js", "Tailwind", "Appwrite", "shadcn", "Sentry"],
+},
     {
       img: covapay,
       title: "Covapay website",
@@ -72,22 +80,37 @@ const Right = () => {
             ABOUT
           </h2>
           <p>
-            Back in 2016, I decided to try my hand at creating pixel-perfect
-            websites and tumbled headfirst into the rabbit hole of coding and
-            web development. Fast-forward to today, and I’ve had the privilege
-            of building software for an advertising agency, a school, a large
-            corporation, and a community forum{" "}
+            Since diving into the world of coding in 2016, I've embraced the
+            challenge of turning complex problems into elegant solutions. My
+            journey has led me through diverse projects, from crafting
+            pixel-perfect websites to developing robust software for a school, a large corporation, and a community
+            forum.
           </p>
           <p className="mt-3">
-            My main focus these days is building accessible user interfaces for
-            our customers. I most enjoy working in the sweet spot where design
-            and engineering meet — creating software that looks great and
-            functions seamlessly. In my free time, I always find projects to
-            work on to improve my programming skills.
-          </p>{" "}
+            I thrive on tackling real-world challenges, always believing that
+            with the right approach and relentless curiosity, any problem can be
+            solved. For instance, when I noticed inefficiencies in my local
+            gym's management system, I took initiative and developed a
+            comprehensive gym management app. This solution streamlined
+            operations for administrators and enhanced the experience for
+            members, demonstrating my ability to identify problems and create
+            practical, impactful solutions.
+          </p>
           <p className="mt-3">
-            When I’m not at the computer, I’m usually playing chess, dancing,
-            listening to music, or lifting weights at the gym
+            Currently, my focus is on creating accessible, user-centric
+            interfaces that bridge the gap between design and functionality. I
+            find my sweet spot where aesthetics meet engineering, crafting
+            software that not only looks great but also operates flawlessly. In
+            my free time, I'm always working on personal projects that address
+            tangible needs, pushing the boundaries of what's possible and honing
+            my skills in the process.
+          </p>
+          <p className="mt-3">
+            When I step away from the keyboard, you'll find me sharpening my
+            strategic thinking over a game of chess, expressing myself through
+            dance, immersing in music, or pushing my limits at the gym – all
+            activities that fuel my creativity and problem-solving mindset in
+            unexpected ways.
           </p>
         </div>
       </section>
