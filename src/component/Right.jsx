@@ -4,6 +4,8 @@ import crestfood from "../img/crestfood.png";
 import servicecrud from "../img/servicecrud.png";
 import adimstack from "../img/adimstack.jpg";
 import jextoban from "../img/jextoban.png";
+import agency from "../img/agency.jpg";
+import tracker from "../img/tracker.jpg";
 import portfolio from "../img/portfolio.png";
 import rotate from "../img/rotate.gif";
 import { MdArrowOutward } from "react-icons/md";
@@ -28,12 +30,26 @@ const Right = () => {
 
   const projects = [
     {
-  img: adimstack,
-  title: "Gym Management Webapp",
-  link: "https://adimstack.vercel.app/",
-  desc: "A comprehensive gym management solution built with Next.js and Appwrite. This webapp empowers gym administrators to efficiently manage members. Key features include member self-service options for subscription management, new member registration, and integrated payment processing. The intuitive interface, powered by Tailwind CSS and shadcn components, ensures a seamless experience for both admins and members.",
-  tag: ["Next.js", "Tailwind", "Appwrite", "shadcn", "Sentry"],
-},
+      img: tracker,
+      title: "whale tracker app",
+      link: "https://olonts-tracker.vercel.app/",
+      desc: "A solana tracker webapp to tracker early token buyers with next js",
+      tag: ["Next.js", "Tailwind", "Appwrite", "shadcn"],
+    },
+    {
+      img: agency,
+      title: "Agency adminstrator app",
+      link: "https://agency-one-plum.vercel.app/",
+      desc: "An Agency adminstrator dashboard with next js",
+      tag: ["Next.js", "Tailwind", "Appwrite", "shadcn"],
+    },
+    {
+      img: adimstack,
+      title: "Gym Management Webapp",
+      link: "https://adimstack.vercel.app/",
+      desc: "A comprehensive gym management solution built with Next.js and Appwrite. This webapp empowers gym administrators to efficiently manage members. Key features include member self-service options for subscription management, new member registration, and integrated payment processing. The intuitive interface, powered by Tailwind CSS and shadcn components, ensures a seamless experience for both admins and members.",
+      tag: ["Next.js", "Tailwind", "Appwrite", "shadcn", "Sentry"],
+    },
     {
       img: covapay,
       title: "Covapay website",
@@ -75,7 +91,7 @@ const Right = () => {
   return (
     <div className="TextColor">
       <section id="about" className="mt-10 xl:mt-0 xl:pt-32">
-        <div className="gap-2 text-[15px] mt-10 lg:mt-0 lg:text-[16px]">
+        {/* <div className="gap-2 text-[15px] mt-10 lg:mt-0 lg:text-[16px]">
           <h2 className="text-[15px] text-white mb-8 lg:text-[20px] font-[700] lg:hidden">
             ABOUT
           </h2>
@@ -111,6 +127,34 @@ const Right = () => {
             dance, immersing in music, or pushing my limits at the gym – all
             activities that fuel my creativity and problem-solving mindset in
             unexpected ways.
+          </p>
+        </div> */}
+
+        <div className="gap-2 text-[15px] mt-10 lg:mt-0 lg:text-[16px]">
+          <h2 className="text-[15px] text-white mb-8 lg:text-[20px] font-[700] lg:hidden">
+            ABOUT
+          </h2>
+          <p>
+            I'm not just another developer; I'm a creator driven by curiosity
+            and a relentless pursuit of innovation. I
+            build applications that stand out for their quality, speed, and
+            real-world impact, tackling everything from pixel-perfect websites
+            to comprehensive solutions in web3, crypto, and beyond.
+          </p>
+          <p className="mt-3">
+            I don’t just code—I solve problems. Whether optimizing a gym
+            management system or enhancing user experience in a decentralized
+            app, I deliver efficient, scalable solutions that align with modern
+            needs. I leverage every tool available, from AI to prompt
+            engineering, to push boundaries and ensure my work is as intelligent
+            and adaptable as it is fast and effective.
+          </p>
+          <p className="mt-3">
+            My focus is always on merging design with functionality to create
+            user-centric experiences that don’t compromise on performance. I
+            approach each project with a sharp eye for detail, a passion for
+            impactful results, and a commitment to building faster and smarter
+            with every tool at my disposal.
           </p>
         </div>
       </section>
