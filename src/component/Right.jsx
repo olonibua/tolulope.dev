@@ -31,9 +31,9 @@ const Right = () => {
   const projects = [
     {
       img: tracker,
-      title: "whale tracker app",
+      title: "Whale tracker app",
       link: "https://olonts-tracker.vercel.app/",
-      desc: "A solana tracker webapp to tracker early token buyers with next js",
+      desc: "A solana webapp to track early memetoken buyers with next js",
       tag: ["Next.js", "Tailwind", "Appwrite", "shadcn"],
     },
     {
