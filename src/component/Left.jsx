@@ -76,7 +76,7 @@ export const Left = ({ sections, activeSection, handleMenuClick }) => {
             </svg>
           </a>
           <a
-            href="https://x.com/ifetolu5"
+            href="https://x.com/itsolonts"
             target="_blank"
             rel="noopener noreferrer"
           >
