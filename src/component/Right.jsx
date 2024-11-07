@@ -33,7 +33,7 @@ const Right = () => {
       img: tracker,
       title: "Whale tracker app",
       link: "https://olonts-tracker.vercel.app/",
-      desc: "A solana webapp to track early memetoken buyers with next js",
+      desc: "A webapp that tracks early memetoken buyers on solana chain",
       tag: ["Next.js", "Tailwind", "Appwrite", "shadcn"],
     },
     {
