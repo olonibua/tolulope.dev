@@ -114,7 +114,7 @@ const Right = () => {
 
             <p className="mb-4">
               I'm a software developer with over three years of experience, who
-              has evolved into a Prompt Engineer and vibe coder. I combine
+              has evolved into a Prompt Engineering. I combine
               AI-driven development techniques with traditional coding to create
               SaaS products and MVPs efficiently and effortlessly.
             </p>
