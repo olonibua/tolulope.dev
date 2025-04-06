@@ -37,13 +37,6 @@ const Right = () => {
 
   const projects = [
     {
-      img: socialBridge,
-      title: "Social Media Bridge",
-      link: "https://socialbridge-sigma.vercel.app",
-      desc: "A unified platform that connects multiple social media accounts, allowing users to create and share content across platforms simultaneously. Built with AI-assisted development using cursor and prompt engineering techniques.",
-      tag: ["Next.js", "TypeScript", "Appwrite", "Shadcn UI", "OAuth"],
-    },
-    {
       img: salein,
       title: "Salein - Invoice Management",
       link: "https://salein.vercel.app",
@@ -56,13 +49,7 @@ const Right = () => {
         "PDF Generation",
       ],
     },
-    {
-      img: meetup,
-      title: "Remote Meetup App",
-      link: "https://meetme-eta.vercel.app",
-      desc: "A location-based meetup application that helps users create and join local meetups. Features include location detection, distance-based filtering, interactive maps, and real-time communication. Built using prompt engineering for faster development.",
-      tag: ["Next.js", "Appwrite", "Mapbox", "Real-time", "Authentication"],
-    },
+
     {
       img: qrSystem,
       title: "SecuredPass",
@@ -82,6 +69,20 @@ const Right = () => {
         "Data Visualization",
         "TypeScript",
       ],
+    },
+    {
+      img: socialBridge,
+      title: "Social Media Bridge",
+      link: "https://socialbridge-sigma.vercel.app",
+      desc: "A unified platform that connects multiple social media accounts, allowing users to create and share content across platforms simultaneously. Built with AI-assisted development using cursor and prompt engineering techniques.",
+      tag: ["Next.js", "TypeScript", "Appwrite", "Shadcn UI", "OAuth"],
+    },
+    {
+      img: meetup,
+      title: "Remote Meetup App",
+      link: "https://meetme-eta.vercel.app",
+      desc: "A location-based meetup application that helps users create and join local meetups. Features include location detection, distance-based filtering, interactive maps, and real-time communication. Built using prompt engineering for faster development.",
+      tag: ["Next.js", "Appwrite", "Mapbox", "Real-time", "Authentication"],
     },
     {
       img: gymNetwork,
