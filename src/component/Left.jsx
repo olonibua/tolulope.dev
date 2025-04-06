@@ -4,17 +4,17 @@ import { FaLinkedin, FaGithub, FaTwitter, FaInstagram } from "react-icons/fa";
 import { FaWandMagicSparkles } from "react-icons/fa6";
 import creator from "../img/creator.jpg";
 
-export const Left = ({ sections, activeSection, handleMenuClick }) => {
+export const Left = ({ sections, activeSection, handleMenuClick, theme }) => {
   return (
     <div className="relative z-10">
-      <div className="sticky top-10">
+      <div>
         <motion.div
           initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.5 }}
           className="mb-6 relative"
         >
-          <div className="w-32 h-32 md:w-40 md:h-40 rounded-full overflow-hidden border-4 border-white shadow-soft mb-4">
+          <div className="w-32 h-32 md:w-40 md:h-40 rounded-full overflow-hidden border-4 border-white dark:border-gray-800 shadow-soft mb-4">
             <img 
               src={creator}
               alt="Tolulope Olonibua" 
@@ -33,7 +33,7 @@ export const Left = ({ sections, activeSection, handleMenuClick }) => {
             transition={{ duration: 0.6 }}
             className="relative"
           >
-            <h2 className="text-3xl lg:text-5xl tracking-tight font-bold font-display text-dark">
+            <h2 className="text-3xl lg:text-4xl tracking-tight font-bold font-display text-dark dark:text-white">
               Tolulope <span className="gradient-text">Olonibua</span>
             </h2>
             <div className="w-20 h-1 bg-gradient-accent rounded-full my-3"></div>
@@ -43,20 +43,11 @@ export const Left = ({ sections, activeSection, handleMenuClick }) => {
           </motion.div>
         </div>
 
-        <motion.p 
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.2 }}
-          className="text-base lg:text-lg max-w-[280px] lg:max-w-[350px] text-textSecondary"
-        >
-          Building AI-driven experiences and SaaS products through vibe coding.
-        </motion.p>
-
         <motion.nav 
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.4 }}
-          className="mt-12 lg:mt-16 hidden lg:block"
+          className="mt-8 lg:mt-12 hidden lg:block"
         >
           <ul className="space-y-4">
             {sections.map((section) => (
@@ -71,45 +62,27 @@ export const Left = ({ sections, activeSection, handleMenuClick }) => {
             ))}
           </ul>
         </motion.nav>
-
-        <motion.div 
+        
+        <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.6 }}
-          className="flex gap-4 items-center mt-10 lg:mt-16"
+          className="mt-12"
         >
-          <a
-            href="https://github.com/olonibua"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-textSecondary hover:text-primary transition-colors"
-          >
-            <FaGithub className="h-5 w-5" />
-          </a>
-          <a
-            href="https://www.linkedin.com/in/olonibua-tolulope/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-textSecondary hover:text-primary transition-colors"
-          >
-            <FaLinkedin className="h-5 w-5" />
-          </a>
-          <a
-            href="https://x.com/itsolonts"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-textSecondary hover:text-primary transition-colors"
-          >
-            <FaTwitter className="h-5 w-5" />
-          </a>
-          <a
-            href="https://www.instagram.com/its_olonts"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-textSecondary hover:text-primary transition-colors"
-          >
-            <FaInstagram className="h-5 w-5" />
-          </a>
+          <div className="flex space-x-4">
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="text-gray-500 dark:text-gray-400 hover:text-primary dark:hover:text-secondary transition-colors">
+              <FaLinkedin size={20} />
+            </a>
+            <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="text-gray-500 dark:text-gray-400 hover:text-primary dark:hover:text-secondary transition-colors">
+              <FaGithub size={20} />
+            </a>
+            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="text-gray-500 dark:text-gray-400 hover:text-primary dark:hover:text-secondary transition-colors">
+              <FaTwitter size={20} />
+            </a>
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="text-gray-500 dark:text-gray-400 hover:text-primary dark:hover:text-secondary transition-colors">
+              <FaInstagram size={20} />
+            </a>
+          </div>
         </motion.div>
       </div>
     </div>

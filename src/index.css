@@ -14,6 +14,11 @@ body {
   color: #333333;
 }
 
+.dark body {
+  background-color: #121212;
+  color: #FFFFFF;
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
@@ -23,8 +28,17 @@ code {
 @tailwind components;
 @tailwind utilities;
 
+/* Default dark mode for all visitors */
+:root {
+  color-scheme: dark;
+}
+
 .TextColor {
   color: rgb(148 163 184);
+}
+
+.dark .TextColor {
+  color: rgb(180 185 190);
 }
 
 .bar {
@@ -37,13 +51,25 @@ code {
   @apply relative text-textSecondary hover:text-primary transition-colors duration-300;
 }
 
+.dark .nav-link {
+  @apply text-gray-300 hover:text-secondary;
+}
+
 .nav-link.active {
   @apply text-primary font-semibold;
+}
+
+.dark .nav-link.active {
+  @apply text-secondary font-semibold;
 }
 
 .nav-link::after {
   content: '';
   @apply absolute left-0 -bottom-1 w-0 h-0.5 bg-primary transition-all duration-300;
+}
+
+.dark .nav-link::after {
+  @apply bg-secondary;
 }
 
 .nav-link:hover::after, .nav-link.active::after {
@@ -54,8 +80,16 @@ code {
   @apply bg-white rounded-xl shadow-soft hover:shadow-hover transition-all duration-300 overflow-hidden;
 }
 
+.dark .card {
+  @apply bg-gray-900 shadow-dark-soft hover:shadow-dark-hover;
+}
+
 .section-title {
   @apply text-2xl md:text-3xl font-bold font-display text-dark mb-6;
+}
+
+.dark .section-title {
+  @apply text-white;
 }
 
 .section-subtitle {
@@ -66,11 +100,19 @@ code {
   @apply bg-accent/20 text-primary py-1 px-3 rounded-full font-medium text-xs;
 }
 
+.dark .tech-pill {
+  @apply bg-accent/30 text-accent;
+}
+
 .gradient-text {
   @apply text-transparent bg-clip-text;
   background-image: linear-gradient(90deg, #0077B6, #00B4D8);
   background-size: 200% 200%;
   animation: gradient 8s ease infinite;
+}
+
+.dark .gradient-text {
+  background-image: linear-gradient(90deg, #00B4D8, #90E0EF);
 }
 
 @keyframes gradient {
@@ -79,7 +121,17 @@ code {
 }
 
 .project-card {
-  @apply card p-4 md:p-6 flex flex-col;
+  @apply card p-4 md:p-6 flex flex-col relative;
+  z-index: 5;
+}
+
+.project-card a {
+  position: relative;
+  z-index: 10;
+}
+
+a {
+  cursor: pointer !important;
 }
 
 .project-card img {
@@ -114,10 +166,6 @@ code {
   to { transform: rotate(360deg); }
 }
 
-/* .TextColor {
-  color: #ffffff;
-} */
-
 .glass-effect {
   background: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(8px);
@@ -129,4 +177,18 @@ code {
 
 .glass-effect:hover {
   background: rgba(121, 121, 121, 0.16);
+}
+
+/* Project cards for dark mode */
+.dark .project-card {
+  @apply bg-gray-900 border border-gray-800;
+}
+
+.dark p {
+  @apply text-gray-300;
+}
+
+/* Improved contrast for text in dark mode */
+.dark h1, .dark h2, .dark h3, .dark h4, .dark h5, .dark h6 {
+  @apply text-white;
 }
