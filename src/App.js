@@ -5,7 +5,7 @@ import { motion } from 'framer-motion';
 
 function App() {
   const [cursorPosition, setCursorPosition] = useState({ x: 0, y: 0 });
-  const [theme, setTheme] = useState('light');
+  const [theme, setTheme] = useState('dark');
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
