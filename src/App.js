@@ -1,29 +1,48 @@
-import React, { useEffect, useState } from "react";
-import logo from "./logo.svg";
+import React, { useState, useEffect } from 'react';
 import "./App.css";
 import HomePage from "./component/HomePage";
 
 function App() {
-  const [position, setPosition] = useState({ x: 0, y: 0 });
+  const [cursorPosition, setCursorPosition] = useState({ x: 0, y: 0 });
+  const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-    const handleMouseMove = (event) => {
-      setPosition({ x: event.clientX, y: event.clientY });
+    const handleMouseMove = (e) => {
+      setCursorPosition({ x: e.clientX, y: e.clientY });
     };
 
-    window.addEventListener("mousemove", handleMouseMove);
+    window.addEventListener('mousemove', handleMouseMove);
+
+    // Simulate loading
+    const timer = setTimeout(() => {
+      setIsLoading(false);
+    }, 1500);
 
     return () => {
-      window.removeEventListener("mousemove", handleMouseMove);
+      window.removeEventListener('mousemove', handleMouseMove);
+      clearTimeout(timer);
     };
   }, []);
 
+  if (isLoading) {
+    return (
+      <div className="min-h-screen bg-light flex items-center justify-center">
+        <div className="text-center">
+          <div className="inline-block h-16 w-16 animate-spin rounded-full border-4 border-solid border-primary border-r-transparent align-[-0.125em] motion-reduce:animate-[spin_1.5s_linear_infinite]" role="status">
+            <span className="!absolute !-m-px !h-px !w-px !overflow-hidden !whitespace-nowrap !border-0 !p-0 ![clip:rect(0,0,0,0)]">Loading...</span>
+          </div>
+          <p className="mt-4 text-lg font-medium text-primary">Loading Portfolio...</p>
+        </div>
+      </div>
+    );
+  }
+
   return (
-    <div className="min-h-full  " style={{ background: "rgb(15 23 42)" }}>
-      <div
-        className="pointer-events-none fixed inset-0 z-30 transition duration-300"
+    <div className="relative">
+      <div 
+        className="pointer-events-none fixed inset-0 z-30 opacity-70 transition duration-300 ease-in-out"
         style={{
-          background: `radial-gradient(600px at ${position.x}px ${position.y}px, rgba(29, 78, 216, 0.2), transparent 80%)`,
+          background: `radial-gradient(600px at ${cursorPosition.x}px ${cursorPosition.y}px, rgba(0, 119, 182, 0.15), transparent 80%)`,
         }}
       />
       {/* <header className="App-header">
