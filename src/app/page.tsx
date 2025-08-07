@@ -205,9 +205,9 @@ export default function HomePage() {
         </div>
       </nav>
 
-      <main className="pt-20">
+      <main className="pt-10">
         {/* Hero Section */}
-        <section id="about" className="relative min-h-screen flex items-center justify-center px-4 sm:px-6 py-20 bg-gradient-to-br from-gray-50 to-gray-100 dark:from-gray-900 dark:to-gray-800 overflow-hidden">
+        <section id="about" className="relative min-h-screen flex items-center justify-center px-4 sm:px-6 py-16 bg-gradient-to-br from-gray-50 to-gray-100 dark:from-gray-900 dark:to-gray-800 overflow-hidden">
           {/* Subtle background pattern */}
           <div className="absolute inset-0 opacity-30 overflow-hidden">
             <div className="absolute top-10 sm:top-20 left-10 sm:left-20 w-64 sm:w-96 h-64 sm:h-96 bg-accent/5 rounded-full blur-3xl"></div>
