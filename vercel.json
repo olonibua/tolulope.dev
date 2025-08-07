@@ -1,0 +1,6 @@
+{
+  "buildCommand": "next build",
+  "outputDirectory": "out",
+  "trailingSlash": false,
+  "cleanUrls": true
+}
