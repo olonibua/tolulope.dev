@@ -29,23 +29,28 @@ export const viewport: Viewport = {
 }
 
 export const metadata: Metadata = {
-  title: "Tolulope Olonibua - Prompt Engineer & SaaS Developer",
-  description: "Prompt Engineer & SaaS Developer specializing in AI-driven solutions. Building MVPs efficiently through intelligent prompt engineering and modern web technologies.",
-  keywords: "Prompt Engineer, SaaS Developer, AI Integration, React, Next.js, TypeScript, MVP Development, AI-driven development, remote developer, software engineer",
+  title: "Tolulope Olonibua - Full Stack Developer",
+  description: "Full Stack Developer specializing in modern web technologies. Building exceptional digital experiences with React, Next.js, and TypeScript.",
+  keywords: "Full Stack Developer, React, Next.js, TypeScript, Web Development, Frontend, Backend, Remote Developer, UK Developer",
   authors: [{ name: "Tolulope Olonibua" }],
   creator: "Tolulope Olonibua",
   publisher: "Tolulope Olonibua",
+  icons: {
+    icon: '/favicon.ico',
+    shortcut: '/favicon.ico',
+    apple: '/WhatsApp Image 2025-08-07 at 08.54.12.jpeg',
+  },
   openGraph: {
-    title: "Tolulope Olonibua - Prompt Engineer & SaaS Developer",
-    description: "Prompt Engineer & SaaS Developer specializing in AI-driven solutions and MVP development.",
+    title: "Tolulope Olonibua - Full Stack Developer",
+    description: "Full Stack Developer specializing in modern web technologies. Building exceptional digital experiences with React, Next.js, and TypeScript.",
     url: "https://tolulope.dev",
     siteName: "Tolulope Olonibua Portfolio",
     images: [
       {
-        url: "/og-image.jpg",
-        width: 1200,
-        height: 630,
-        alt: "Tolulope Olonibua - Prompt Engineer & SaaS Developer",
+        url: "/WhatsApp Image 2025-08-07 at 08.54.12.jpeg",
+        width: 400,
+        height: 400,
+        alt: "Tolulope Olonibua - Full Stack Developer",
       },
     ],
     locale: "en_GB",
@@ -53,9 +58,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Tolulope Olonibua - Software Engineer",
-    description: "Senior Full-Stack Developer specializing in React, Next.js, and modern web technologies.",
-    images: ["/og-image.jpg"],
+    title: "Tolulope Olonibua - Full Stack Developer",
+    description: "Full Stack Developer specializing in React, Next.js, and modern web technologies.",
+    images: ["/WhatsApp Image 2025-08-07 at 08.54.12.jpeg"],
   },
   robots: {
     index: true,
