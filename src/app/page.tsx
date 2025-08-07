@@ -175,7 +175,7 @@ export default function HomePage() {
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.6 }}
             >
-              Tolulope Olonibua
+              Olonts
             </motion.h1>
             
             <motion.div 
@@ -780,7 +780,7 @@ export default function HomePage() {
             
             <div className="mt-8 pt-6 border-t border-default/20 flex flex-col md:flex-row items-center justify-between gap-4">
               <p className="text-text-muted text-sm">
-                © 2024 Tolulope Ifeoluwa Olonibua. Built with Next.js and Framer Motion.
+                © 2024 Tolulope Olonibua. Built with Next.js and Framer Motion.
               </p>
               <div className="flex items-center gap-2">
                 <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse"></div>
