@@ -147,7 +147,7 @@ export default function HomePage() {
   };
 
   return (
-    <div className="min-h-screen bg-background-primary">
+    <div className="min-h-screen bg-background-primary overflow-x-hidden">
       {/* Theme Toggle */}
       <motion.button
         onClick={toggleTheme}
@@ -207,11 +207,11 @@ export default function HomePage() {
 
       <main className="pt-20">
         {/* Hero Section */}
-        <section id="about" className="relative min-h-screen flex items-center justify-center px-6 py-20 bg-gradient-to-br from-gray-50 to-gray-100 dark:from-gray-900 dark:to-gray-800 overflow-hidden">
+        <section id="about" className="relative min-h-screen flex items-center justify-center px-4 sm:px-6 py-20 bg-gradient-to-br from-gray-50 to-gray-100 dark:from-gray-900 dark:to-gray-800 overflow-hidden">
           {/* Subtle background pattern */}
-          <div className="absolute inset-0 opacity-30">
-            <div className="absolute top-20 left-20 w-96 h-96 bg-accent/5 rounded-full blur-3xl"></div>
-            <div className="absolute bottom-20 right-20 w-80 h-80 bg-purple-500/5 rounded-full blur-3xl"></div>
+          <div className="absolute inset-0 opacity-30 overflow-hidden">
+            <div className="absolute top-10 sm:top-20 left-10 sm:left-20 w-64 sm:w-96 h-64 sm:h-96 bg-accent/5 rounded-full blur-3xl"></div>
+            <div className="absolute bottom-10 sm:bottom-20 right-10 sm:right-20 w-56 sm:w-80 h-56 sm:h-80 bg-purple-500/5 rounded-full blur-3xl"></div>
           </div>
 
           <motion.div
@@ -243,7 +243,7 @@ export default function HomePage() {
               {/* Name with modern typography */}
               <motion.h1 
                 variants={itemVariants}
-                className="text-4xl md:text-6xl lg:text-7xl font-sans font-light mb-6 text-text-primary tracking-tight"
+                className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-sans font-light mb-6 text-text-primary tracking-tight px-4"
               >
                 Tolulope Olonibua
               </motion.h1>
@@ -251,7 +251,7 @@ export default function HomePage() {
               {/* Tagline */}
               <motion.p 
                 variants={itemVariants}
-                className="text-lg md:text-xl text-text-secondary mb-8 font-normal leading-relaxed max-w-2xl mx-auto"
+                className="text-base sm:text-lg md:text-xl text-text-secondary mb-8 font-normal leading-relaxed max-w-2xl mx-auto px-4"
               >
                 Software Engineer building exceptional digital experiences with modern web technologies
               </motion.p>
@@ -266,9 +266,9 @@ export default function HomePage() {
               </motion.div>
 
               {/* Modern CTA Button */}
-              <motion.div variants={itemVariants} className="mb-16">
+              <motion.div variants={itemVariants} className="mb-12 sm:mb-16 px-4">
                 <motion.button
-                  className="group relative px-12 py-4 bg-gradient-to-r from-accent to-accent-hover text-white rounded-full font-medium text-lg shadow-2xl overflow-hidden"
+                  className="group relative px-8 sm:px-12 py-3 sm:py-4 bg-gradient-to-r from-accent to-accent-hover text-white rounded-full font-medium text-base sm:text-lg shadow-2xl overflow-hidden"
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
                   onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
@@ -287,7 +287,7 @@ export default function HomePage() {
               {/* Progress-like Status Cards */}
               <motion.div 
                 variants={itemVariants}
-                className="grid grid-cols-1 md:grid-cols-2 gap-4 max-w-2xl mx-auto mb-12"
+                className="grid grid-cols-1 md:grid-cols-2 gap-4 max-w-2xl mx-auto mb-12 px-4"
               >
                 <div className="flex items-center justify-between p-4 bg-card/60 backdrop-blur-sm border border-default/30 rounded-2xl shadow-lg">
                   <div className="flex items-center gap-3">
@@ -313,7 +313,7 @@ export default function HomePage() {
               {/* Clean Social Links */}
               <motion.div 
                 variants={itemVariants}
-                className="flex justify-center items-center gap-2"
+                className="flex justify-center items-center gap-2 px-4 flex-wrap"
               >
                 {[
                   { icon: FiGithub, href: "https://github.com/olonibua", label: "GitHub" },
@@ -340,7 +340,7 @@ export default function HomePage() {
         </section>
 
         {/* Experience Section */}
-        <section id="experience" className="py-24 px-6">
+        <section id="experience" className="py-16 sm:py-24 px-4 sm:px-6">
           <div className="max-w-5xl mx-auto">
             <motion.div
               initial={{ opacity: 0, y: 30 }}
@@ -349,10 +349,10 @@ export default function HomePage() {
               viewport={{ once: true }}
               className="text-center mb-16"
             >
-              <h2 className="text-3xl md:text-5xl font-sans font-light mb-6 text-text-primary">
+              <h2 className="text-2xl sm:text-3xl md:text-5xl font-sans font-light mb-6 text-text-primary px-4">
                 Work Experience
               </h2>
-              <p className="text-lg text-text-muted max-w-2xl mx-auto">
+              <p className="text-base sm:text-lg text-text-muted max-w-2xl mx-auto px-4">
                 Building innovative solutions across diverse industries
               </p>
             </motion.div>
@@ -433,11 +433,11 @@ export default function HomePage() {
         </section>
 
         {/* Projects Section */}
-        <section id="projects" className="py-24 px-6 relative bg-gradient-to-br from-gray-50 to-gray-100 dark:from-gray-900 dark:to-gray-800">
+        <section id="projects" className="py-16 sm:py-24 px-4 sm:px-6 relative bg-gradient-to-br from-gray-50 to-gray-100 dark:from-gray-900 dark:to-gray-800">
           {/* Background decoration */}
-          <div className="absolute inset-0 opacity-20">
-            <div className="absolute top-32 right-20 w-64 h-64 bg-accent/10 rounded-full blur-3xl"></div>
-            <div className="absolute bottom-32 left-20 w-80 h-80 bg-purple-500/10 rounded-full blur-3xl"></div>
+          <div className="absolute inset-0 opacity-20 overflow-hidden">
+            <div className="absolute top-16 sm:top-32 right-10 sm:right-20 w-48 sm:w-64 h-48 sm:h-64 bg-accent/10 rounded-full blur-3xl"></div>
+            <div className="absolute bottom-16 sm:bottom-32 left-10 sm:left-20 w-56 sm:w-80 h-56 sm:h-80 bg-purple-500/10 rounded-full blur-3xl"></div>
           </div>
 
           <div className="max-w-6xl mx-auto relative z-10">
@@ -448,10 +448,10 @@ export default function HomePage() {
               viewport={{ once: true }}
               className="text-center mb-16"
             >
-              <h2 className="text-3xl md:text-5xl font-sans font-light mb-6 text-text-primary">
+              <h2 className="text-2xl sm:text-3xl md:text-5xl font-sans font-light mb-6 text-text-primary px-4">
                 Featured Projects
               </h2>
-              <p className="text-lg text-text-muted max-w-2xl mx-auto">
+              <p className="text-base sm:text-lg text-text-muted max-w-2xl mx-auto px-4">
                 Real-world applications showcasing modern web development expertise
               </p>
             </motion.div>
@@ -542,7 +542,7 @@ export default function HomePage() {
         </section>
 
         {/* Skills Section */}
-        <section id="skills" className="py-24 px-6">
+        <section id="skills" className="py-16 sm:py-24 px-4 sm:px-6">
           <div className="max-w-4xl mx-auto">
             <motion.div
               initial={{ opacity: 0, y: 30 }}
@@ -551,10 +551,10 @@ export default function HomePage() {
               viewport={{ once: true }}
               className="text-center mb-16"
             >
-              <h2 className="text-3xl md:text-5xl font-sans font-light mb-6 text-text-primary">
+              <h2 className="text-2xl sm:text-3xl md:text-5xl font-sans font-light mb-6 text-text-primary px-4">
                 Technical Skills
               </h2>
-              <p className="text-lg text-text-muted max-w-2xl mx-auto">
+              <p className="text-base sm:text-lg text-text-muted max-w-2xl mx-auto px-4">
                 Expertise in modern web technologies and best practices
               </p>
             </motion.div>
@@ -613,11 +613,11 @@ export default function HomePage() {
         </section>
 
         {/* Contact Section */}
-        <section id="contact" className="py-24 px-6 relative bg-gradient-to-br from-gray-50 to-gray-100 dark:from-gray-900 dark:to-gray-800">
+        <section id="contact" className="py-16 sm:py-24 px-4 sm:px-6 relative bg-gradient-to-br from-gray-50 to-gray-100 dark:from-gray-900 dark:to-gray-800">
           {/* Background decoration */}
-          <div className="absolute inset-0 opacity-20">
-            <div className="absolute top-20 left-20 w-72 h-72 bg-accent/10 rounded-full blur-3xl"></div>
-            <div className="absolute bottom-20 right-20 w-80 h-80 bg-purple-500/10 rounded-full blur-3xl"></div>
+          <div className="absolute inset-0 opacity-20 overflow-hidden">
+            <div className="absolute top-10 sm:top-20 left-10 sm:left-20 w-48 sm:w-72 h-48 sm:h-72 bg-accent/10 rounded-full blur-3xl"></div>
+            <div className="absolute bottom-10 sm:bottom-20 right-10 sm:right-20 w-56 sm:w-80 h-56 sm:h-80 bg-purple-500/10 rounded-full blur-3xl"></div>
           </div>
 
           <div className="max-w-4xl mx-auto text-center relative z-10">
@@ -627,10 +627,10 @@ export default function HomePage() {
               transition={{ duration: 0.6 }}
               viewport={{ once: true }}
             >
-              <h2 className="text-3xl md:text-5xl font-sans font-light mb-6 text-text-primary">
+              <h2 className="text-2xl sm:text-3xl md:text-5xl font-sans font-light mb-6 text-text-primary px-4">
                 Let's Work Together
               </h2>
-              <p className="text-lg text-text-muted mb-12 max-w-2xl mx-auto leading-relaxed">
+              <p className="text-base sm:text-lg text-text-muted mb-12 max-w-2xl mx-auto leading-relaxed px-4">
                 I'm actively seeking new opportunities in the UK and internationally. 
                 Let's discuss how I can contribute to your team.
               </p>
@@ -741,7 +741,7 @@ export default function HomePage() {
       </main>
 
       {/* Footer */}
-      <footer className="py-12 px-6 border-t border-default/30">
+      <footer className="py-8 sm:py-12 px-4 sm:px-6 border-t border-default/30">
         <div className="max-w-4xl mx-auto">
           <div className="bg-card/40 backdrop-blur-sm rounded-3xl p-8 border border-default/30 shadow-lg">
             <div className="flex flex-col md:flex-row items-center justify-between gap-6">
