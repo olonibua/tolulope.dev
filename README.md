@@ -1,71 +1,98 @@
-# Getting Started with Create React App
+# Tolulope Adeyomide - Portfolio Website
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A modern, professional portfolio website built with Next.js, TypeScript, Tailwind CSS, and Framer Motion. Designed specifically for UK job applications and international opportunities.
 
-## Available Scripts
+## ✨ Features
 
-In the project directory, you can run:
+- **Elegant Design**: Clean, professional layout inspired by modern CV designs
+- **Smooth Animations**: Powered by Framer Motion for engaging user experience
+- **Dark/Light Theme**: Automatic theme switching with user preference storage
+- **Responsive Design**: Optimized for all devices from mobile to desktop
+- **Professional Focus**: Tailored content for UK job market applications
+- **Performance Optimized**: Built with Next.js 15 and modern web technologies
 
-### `yarn start`
+## 🚀 Tech Stack
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **Framework**: Next.js 15 with App Router
+- **Language**: TypeScript
+- **Styling**: Tailwind CSS with CSS Variables
+- **Animations**: Framer Motion
+- **Icons**: React Icons (Feather Icons)
+- **Font**: Inter & Playfair Display from Google Fonts
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 🛠️ Development
 
-### `yarn test`
+```bash
+# Install dependencies
+npm install
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+# Start development server
+npm run dev
 
-### `yarn build`
+# Build for production
+npm run build
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+# Type check
+npm run type-check
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+# Lint code
+npm run lint
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 📁 Project Structure
 
-### `yarn eject`
+```
+src/
+├── app/
+│   ├── globals.css      # Global styles and theme variables
+│   ├── layout.tsx       # Root layout with theme provider
+│   └── page.tsx         # Main portfolio page
+└── lib/
+    ├── contexts/
+    │   └── theme-context.tsx  # Theme management
+    └── utils.ts         # Utility functions
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## 🎨 Design Features
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- **Professional Typography**: Serif headings with sans-serif body text
+- **Elegant Color Scheme**: Carefully chosen colors for both light and dark themes
+- **Smooth Transitions**: Consistent animation patterns throughout
+- **Card-based Layout**: Clean sections with subtle shadows and borders
+- **Mobile-first Approach**: Responsive design starting from mobile
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## 🌟 Key Sections
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+1. **Hero Section**: Professional introduction with call-to-action
+2. **Experience**: Detailed work history with achievements and technologies
+3. **Projects**: Featured work with live demos and source code links
+4. **Skills**: Technical proficiency with visual progress bars
+5. **Contact**: Professional contact information and availability
 
-## Learn More
+## 🚀 Deployment
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+This project is configured for static export and can be deployed to:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- Vercel (recommended)
+- Netlify
+- GitHub Pages
+- Any static hosting service
 
-### Code Splitting
+```bash
+npm run build
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## 📝 Customization
 
-### Analyzing the Bundle Size
+1. Update personal information in `src/app/page.tsx`
+2. Replace project images in `public/img/`
+3. Modify theme colors in `src/app/globals.css`
+4. Adjust animations in component files
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## 📄 License
 
-### Making a Progressive Web App
+This project is for personal use. Feel free to use as inspiration for your own portfolio.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+---
 
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-# tolulope.dev
+Built with ❤️ for professional opportunities in the UK and beyond.
