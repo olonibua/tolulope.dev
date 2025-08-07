@@ -262,7 +262,7 @@ export default function HomePage() {
                 className="inline-flex items-center gap-3 px-6 py-3 mb-12 bg-card/80 backdrop-blur-sm border border-default/50 rounded-full shadow-lg"
               >
                 <div className="w-3 h-3 bg-green-500 rounded-full animate-pulse"></div>
-                <span className="text-text-muted text-sm font-medium">Available for work • United Kingdom</span>
+                <span className="text-text-muted text-sm font-medium">Available for work • Remote/Onsite</span>
               </motion.div>
 
               {/* Modern CTA Button */}
