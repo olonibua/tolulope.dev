@@ -1120,10 +1120,6 @@ video {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
 }
-.py-20 {
-  padding-top: 5rem;
-  padding-bottom: 5rem;
-}
 .py-3 {
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
@@ -1136,18 +1132,11 @@ video {
   padding-top: 2rem;
   padding-bottom: 2rem;
 }
-.py-10 {
+.pt-10 {
   padding-top: 2.5rem;
-  padding-bottom: 2.5rem;
-}
-.pt-20 {
-  padding-top: 5rem;
 }
 .pt-6 {
   padding-top: 1.5rem;
-}
-.pt-10 {
-  padding-top: 2.5rem;
 }
 .text-left {
   text-align: left;

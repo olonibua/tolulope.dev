@@ -8,17 +8,17 @@ import { cn, formatDate } from "@/lib/utils";
 
 const workExperience = [
   {
-    company: "MTN Nigeria",
+    company: "MTN",
     logo: "📱",
     role: "Full Stack Developer",
     type: "Remote",
     period: "Apr 2025 — Present",
-    description: "Worked with NestJS to build scalable backend solutions for bill payments, airtime, and bundle payment services. Delivered robust and efficient APIs supporting high transaction volumes and seamless integration with payment providers.",
-    technologies: ["NestJS", "Node.js", "MadApi", "Payment Integration"],
+    description: "Engineered scalable backend solutions with NestJS, powering high-volume bill payment, airtime, and bundle services used by thousands daily. Delivered robust APIs with <200ms average response time, integrating with multiple payment providers.",
+    technologies: ["NestJS", "Node.js", "API Development", "Payment Integration", "Database Optimization"],
     achievements: [
-      "Built scalable backend solutions for payment services",
-      "Delivered APIs supporting high transaction volumes",
-      "Collaborated with cross-functional teams for scalability goals"
+      "Delivered robust APIs with <200ms average response time",
+      "Optimised database queries and caching strategies, improving transaction processing speed by 25%",
+      "Implemented telemetry and monitoring tools, reducing downtime by 35%"
     ]
   },
   {
@@ -26,27 +26,41 @@ const workExperience = [
     logo: "🎓",
     role: "Frontend Engineer", 
     type: "Remote",
-    period: "Apr 2024 — 2025",
-    description: "Developed user-friendly websites using Next.js and React Query for improved state management. Collaborated with cross-functional teams to deliver pixel-perfect designs aligned with product goals. Improved team processes by leading code reviews and accessibility best practices.",
-    technologies: ["Next.js", "React Query", "TypeScript", "Accessibility"],
+    period: "Apr 2024 — Apr 2025",
+    description: "Built responsive, SEO-optimised web platforms with Next.js and React Query, reducing API call latency by 30%. Collaborated with design and product teams to deliver pixel-perfect, accessible UI components.",
+    technologies: ["Next.js", "React Query", "TypeScript", "SEO Optimization", "Accessibility"],
     achievements: [
-      "Delivered pixel-perfect designs aligned with product goals",
-      "Led code reviews and accessibility best practices",
-      "Improved team processes and collaboration"
+      "Built responsive, SEO-optimised web platforms reducing API call latency by 30%",
+      "Collaborated with design and product teams to deliver pixel-perfect UI components",
+      "Initiated code review processes that reduced front-end bugs by 20%"
     ]
   },
   {
-    company: "Lilab (Lima, Peru)",
+    company: "Lilab (Peru)",
     logo: "🧪",
     role: "Frontend Engineer",
     type: "Remote", 
-    period: "Mar 2023 — Sept 2024",
-    description: "Led redesign of key services management software, boosting operational efficiency. Engineered reusable components (e.g., dynamic calendars) for flexibility and enhanced UX. Refactored large codebases using SOLID principles and TypeScript, ensuring maintainability.",
-    technologies: ["React", "TypeScript", "SCSS", "Storybook"],
+    period: "Mar 2021 — Sept 2024",
+    description: "Led the redesign of services management software, boosting operational efficiency by 30%. Developed reusable, dynamic components (e.g., calendars, data tables), cutting new feature dev time by 40%.",
+    technologies: ["React", "TypeScript", "SOLID Principles", "Component Development", "Legacy Code Refactoring"],
     achievements: [
-      "Led redesign boosting operational efficiency",
-      "Engineered reusable components for enhanced UX",
-      "Refactored codebases using SOLID principles"
+      "Led the redesign of services management software, boosting operational efficiency by 30%",
+      "Developed reusable, dynamic components, cutting new feature dev time by 40%",
+      "Applied SOLID principles and TypeScript to refactor legacy codebases, improving maintainability"
+    ]
+  },
+  {
+    company: "Bible Quiz App",
+    logo: "📱",
+    role: "Frontend Engineer",
+    type: "Contract",
+    period: "2021",
+    description: "Built a React Native app with gamification and community features, increasing user retention by 15%. Integrated push notifications and real-time leaderboards for enhanced engagement.",
+    technologies: ["React Native", "Push Notifications", "Real-time Features", "Gamification"],
+    achievements: [
+      "Built React Native app with gamification features, increasing user retention by 15%",
+      "Integrated push notifications and real-time leaderboards",
+      "Delivered community features for enhanced user engagement"
     ]
   }
 ];
@@ -92,11 +106,13 @@ const projects = [
 
 const skills = [
   { name: "React/Next.js", level: 95, category: "frontend" },
-  { name: "TypeScript", level: 90, category: "language" },
-  { name: "Node.js/NestJS", level: 85, category: "backend" },
+  { name: "TypeScript", level: 95, category: "language" },
+  { name: "Node.js/NestJS", level: 90, category: "backend" },
+  { name: "C#/.NET Core", level: 85, category: "backend" },
   { name: "React Native", level: 80, category: "mobile" },
   { name: "Tailwind CSS", level: 90, category: "frontend" },
-  { name: "PostgreSQL", level: 75, category: "database" }
+  { name: "SQL Server/PostgreSQL", level: 80, category: "database" },
+  { name: "Azure/Docker", level: 75, category: "devops" }
 ];
 
 export default function HomePage() {
@@ -253,7 +269,7 @@ export default function HomePage() {
                 variants={itemVariants}
                 className="text-base sm:text-lg md:text-xl text-text-secondary mb-8 font-normal leading-relaxed max-w-2xl mx-auto px-4"
               >
-                Software Engineer building exceptional digital experiences with modern web technologies
+                Creative and results-driven Software Engineer with 4+ years of experience delivering interactive, scalable, and high-performance web applications
               </motion.p>
 
               {/* Status Badge */}
@@ -319,7 +335,7 @@ export default function HomePage() {
                   { icon: FiGithub, href: "https://github.com/olonibua", label: "GitHub" },
                   { icon: FiLinkedin, href: "https://linkedin.com/in/olonibua-tolulope", label: "LinkedIn" },
                   { icon: FiTwitter, href: "https://twitter.com/itsolonts", label: "Twitter" },
-                  { icon: FiExternalLink, href: "/TOLULOPE IFEOLUWA OLONIBUA (1).pdf", label: "Resume" }
+                  { icon: FiExternalLink, href: "/Tolulope_Olonibua_CV.docx", label: "Resume" }
                 ].map(({ icon: Icon, href, label }) => (
                   <motion.a
                     key={label}
@@ -631,7 +647,7 @@ export default function HomePage() {
                 Let's Work Together
               </h2>
               <p className="text-base sm:text-lg text-text-muted mb-12 max-w-2xl mx-auto leading-relaxed px-4">
-                I'm actively seeking new opportunities in the UK and internationally. 
+                Currently based in UK, I'm passionate about clean architecture, maintainable code, and impactful problem-solving. 
                 Let's discuss how I can contribute to your team.
               </p>
 
@@ -652,7 +668,7 @@ export default function HomePage() {
                   {
                     icon: FiMapPin,
                     title: "Location",
-                    value: "Available for UK/Remote",
+                    value: "United Kingdom • Remote/Onsite",
                     href: null
                   }
                 ].map((contact, index) => (
@@ -723,7 +739,7 @@ export default function HomePage() {
                   </motion.a>
                   
                   <motion.a
-                    href="/TOLULOPE IFEOLUWA OLONIBUA (1).pdf"
+                    href="/Tolulope_Olonibua_CV.docx"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center gap-3 bg-background-secondary/60 backdrop-blur-sm text-text-primary px-8 py-4 rounded-2xl font-medium border border-default/30 hover:border-accent/50 hover:bg-accent/10 transition-all"
