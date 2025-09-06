@@ -71,16 +71,35 @@ const projects = [
     description: "A professional laundry service platform offering convenient pickup and delivery across Lagos. Features online booking, service tracking, and automated scheduling for busy professionals.",
     image: "/img/Screenshot 2025-08-05 at 13.43.58.png",
     technologies: ["Next.js", "Firebase", "Google Maps API", "Stripe"],
-    github: "https://github.com/tolulope",
+    github: "https://github.com/olonibua",
     demo: "https://gabzlaundromat.com",
     featured: true
   },
+  {
+    title: "DetNodes - AI Architecture Generator",
+    description: "An AI-powered system architecture generator that transforms app ideas into complete, buildable wireframes. Features interactive node expansion, technical implementation guidance, and professional diagram export for rapid prototyping.",
+    image: "/img/Screenshot 2025-09-06 at 19.57.20.png",
+    technologies: ["Next.js", "AI/ML", "System Architecture", "Wireframing", "TypeScript"],
+    github: "https://github.com/olonibua",
+    demo: "https://detnode.vercel.app",
+    featured: true
+  },
+  {
+    title: "Studio - MVP Development Platform",
+    description: "A comprehensive MVP development studio helping startup founders build and validate digital products in just 2 weeks. Offers SaaS platforms, mobile apps, e-commerce sites, and AI integration services.",
+    image: "/img/Screenshot 2025-09-06 at 19.57.08.png",
+    technologies: ["Next.js", "React Native", "Node.js", "AI Integration", "Rapid Development"],
+    github: "https://github.com/olonibua",
+    demo: "https://studio-delta-blond.vercel.app",
+    featured: true
+  },
+  
   {
     title: "EMURECCIMA - Community Financial Chamber",
     description: "A community-focused financial platform providing collaborative savings, low-interest loans, and emergency assistance for chamber members. Built to strengthen local economic development through mutual support.",
     image: "/img/Screenshot 2025-08-05 at 13.45.31.png",
     technologies: ["Next.js", "Node.js", "PostgreSQL", "Stripe"],
-    github: "https://github.com/tolulope",
+    github: "https://github.com/olonibua",
     demo: "https://emureccima.org",
     featured: true
   },
@@ -89,7 +108,7 @@ const projects = [
     description: "A digital marketplace connecting clients with verified local professionals for daily tasks and errands. Features secure payments, professional verification, and streamlined booking system.",
     image: "/img/Screenshot 2025-08-05 at 22.23.43.png",
     technologies: ["Next.js", "Firebase", "Stripe", "Google Maps API"],
-    github: "https://github.com/tolulope",
+    github: "https://github.com/olonibua",
     demo: "https://erandwork.com",
     featured: true
   },
@@ -98,7 +117,7 @@ const projects = [
     description: "An elegant e-commerce platform showcasing authentic African art and handcrafted gifts from talented artisans. Features artist profiles, cultural storytelling, and global shipping.",
     image: "/img/Screenshot 2025-08-05 at 21.06.55.png", 
     technologies: ["Next.js", "Shopify API", "Stripe", "Tailwind CSS"],
-    github: "https://github.com/tolulope",
+    github: "https://github.com/olonibua",
     demo: "https://mose-two.vercel.app",
     featured: true
   }
